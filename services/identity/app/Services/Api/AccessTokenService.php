@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 final class AccessTokenService {
     public function create(Model|User $user): string {
         $token = Str::random(64);
+        return $token;
     }
 }
